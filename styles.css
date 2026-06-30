@@ -30,7 +30,7 @@ em { font-style: italic; color: var(--brand); }
 
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(253,246,244,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; }
-.brand { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.5rem; }
+.brand { display: inline-flex; align-items: center; gap: .55rem; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.5rem; }
 .brand span { color: var(--brand); font-style: italic; }
 .nav-links { list-style: none; display: flex; align-items: center; gap: 1.8rem; }
 .nav-links a { font-weight: 500; font-size: .92rem; color: var(--muted); }
@@ -93,7 +93,7 @@ section { padding: 5.5rem 0; }
 
 .site-footer { background: #3a2630; color: #e9d6db; padding: 2.6rem 0; text-align: center; }
 .footer-inner { display: grid; gap: .5rem; justify-items: center; }
-.site-footer .brand { color: #fff; }
+.site-footer .brand { display: inline-flex; align-items: center; gap: .55rem; color: #fff; }
 .site-footer .brand span { color: var(--brand); }
 .muted { color: #b79aa3; font-size: .85rem; }
 
