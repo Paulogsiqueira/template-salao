@@ -52,9 +52,11 @@ section { padding: 5.5rem 0; }
 .section-head h2 { font-size: clamp(2rem, 4.5vw, 3rem); }
 
 .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.6rem; }
-.service { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); transition: transform .2s ease; }
+.service { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform .2s ease; }
 .service:hover { transform: translateY(-6px); }
-.service .ico { font-size: 2.2rem; display: block; margin-bottom: 1rem; }
+.service:hover .service-img { transform: scale(1.05); }
+.service-img { height: 190px; background-image: var(--img); background-size: cover; background-position: center; transition: transform .4s ease; }
+.service-body { padding: 1.6rem 1.8rem 1.9rem; }
 .service h3 { font-size: 1.35rem; margin-bottom: .5rem; }
 .service p { color: var(--muted); font-size: .93rem; margin-bottom: .8rem; }
 .from { font-size: .82rem; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: .06em; }
